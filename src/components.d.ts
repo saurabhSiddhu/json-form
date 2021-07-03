@@ -7,6 +7,7 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface FormBuilder {
+        "schema": any;
     }
 }
 declare global {
@@ -22,6 +23,7 @@ declare global {
 }
 declare namespace LocalJSX {
     interface FormBuilder {
+        "schema"?: any;
     }
     interface IntrinsicElements {
         "form-builder": FormBuilder;
